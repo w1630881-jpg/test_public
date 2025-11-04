@@ -127,8 +127,18 @@ body {
   z-index: 1;
 }
 
-.hero-content {
-  font-family: "Helvetica", Arial, sans-serif;
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  object-fit: cover;
 }
 
 .hero-title {
@@ -555,6 +565,10 @@ body {
   .hero-buttons {
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .hero-image img {
+    max-width: 360px;
   }
 
   .about-content {
