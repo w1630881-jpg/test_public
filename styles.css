@@ -171,6 +171,90 @@ body {
   gap: 1rem;
 }
 
+/* About Me Section */
+.about-me {
+  padding: 100px 0;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.about-me .section-title {
+  color: #f1f5f9;
+}
+
+.about-me-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.bio-card {
+  background: linear-gradient(160deg, rgba(37, 99, 235, 0.25), rgba(30, 64, 175, 0.6));
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(6px);
+}
+
+.bio-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #bfdbfe;
+}
+
+.bio-card p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #cbd5f5;
+  margin-bottom: 1.5rem;
+}
+
+.bio-details {
+  display: grid;
+  gap: 2rem;
+}
+
+.detail-group {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.4);
+}
+
+.detail-group h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+}
+
+.detail-group ul {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.detail-group li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #cbd5f5;
+  font-size: 1rem;
+}
+
+.detail-group li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.2);
+}
+
 .btn {
   padding: 12px 24px;
   border-radius: 8px;
@@ -571,6 +655,19 @@ body {
     max-width: 360px;
   }
 
+  .about-me {
+    padding: 80px 0;
+  }
+
+  .about-me-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-card,
+  .detail-group {
+    padding: 2rem;
+  }
+
   .about-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -598,6 +695,11 @@ body {
 
   .section-title {
     font-size: 2rem;
+  }
+
+  .bio-card,
+  .detail-group {
+    padding: 1.75rem;
   }
 
   .about-stats {
