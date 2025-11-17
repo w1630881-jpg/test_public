@@ -534,6 +534,18 @@ body {
   font-weight: 500;
 }
 
+/* Security Section */
+.security {
+  padding: 100px 0;
+  background: #0b1224;
+  color: #e2e8f0;
+}
+
+.security .section-title {
+  color: #f1f5f9;
+  margin-bottom: 0;
+}
+
 /* Contact Section */
 .contact {
   padding: 100px 0;
