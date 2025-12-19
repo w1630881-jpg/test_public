@@ -134,6 +134,18 @@ body {
   position: relative;
 }
 
+.hero-accent-image {
+  position: absolute;
+  top: -40px;
+  left: -60px;
+  width: 180px;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  object-fit: cover;
+  z-index: 2;
+}
+
 .hero-main-image {
   width: 100%;
   max-width: 480px;
@@ -715,6 +727,13 @@ body {
 
   .hero-image {
     flex-direction: column;
+  }
+
+  .hero-accent-image {
+    position: static;
+    width: 160px;
+    margin-bottom: 1.25rem;
+    border-width: 4px;
   }
 
   .hero-main-image {
